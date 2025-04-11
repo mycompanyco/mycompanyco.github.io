@@ -1,0 +1,66 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us - My Company Co.</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', sans-serif;
+                margin: 0;
+                padding: 0;
+                background: #f2faff;
+                color: #333;
+                text-align: center;
+            }
+            header {
+                background-color: #007baf;
+                padding: 20px;
+                color: white;
+            }
+            footer {
+                background-color: #007baf;
+                color: white;
+                padding: 10px;
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+            }
+            .content {
+                padding: 40px 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>My Company Co.</h1>
+        </header>
+        
+<nav style="background-color:#007baf; padding:10px; text-align:center;">
+    <a href="index.html" style="color:white; margin:0 10px;">Home</a>
+    <a href="about.html" style="color:white; margin:0 10px;">About</a>
+    <a href="services.html" style="color:white; margin:0 10px;">Services</a>
+    <a href="gallery.html" style="color:white; margin:0 10px;">Gallery</a>
+    <a href="contact.html" style="color:white; margin:0 10px;">Contact</a>
+    <a href="#" onclick="switchLanguage()" style="color:white; margin:0 10px;">اردو / English</a>
+</nav>
+<script>
+function switchLanguage() {{
+    const urdu = document.querySelectorAll('.urdu');
+    const english = document.querySelectorAll('.english');
+    urdu.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
+    english.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
+}}
+</script>
+
+        <div class="content">
+            <h2 class='english'>About Us</h2><p class='english'>We provide reliable services for families and communities, built on trust and care.</p>
+            <h2 class='urdu' style='display:none;'>Humare baray mein</h2><p class='urdu' style='display:none;'>Hum bharosa mand services faraham karte hain jo khandaan aur community par mabni hain.</p>
+        </div>
+        <footer>
+            <p>© 2025 My Company Co.</p>
+        </footer>
+    </body>
+    </html>
+    
